@@ -4,6 +4,7 @@ import App from './App'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
+  // chamando uma function App dentro de App.tsx
   <React.StrictMode>
     <App />
   </React.StrictMode>

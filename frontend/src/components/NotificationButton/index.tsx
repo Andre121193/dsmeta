@@ -1,6 +1,6 @@
-import icon from '../../assets/img/notification-icon.svg'
+import icon from '../../assets/img/notification-icon.svg';
 
-import './styles.css'
+import './styles.css';
 // uma function js com elementos html dentro
 function NotificationButton() {
   return (
@@ -10,4 +10,4 @@ function NotificationButton() {
   )
 }
 
-export default NotificationButton
+export default NotificationButton;

@@ -1,0 +1,3 @@
+/* coalescência nula(??) do lado direito do operador é o valor padrão da variavel porem ela vai pegar alternativamente oq esta ao lado esquerdo do operador(defeinão de uma variavel de ambiente) 
+o que acontece na execução: pega o valor da variavel de ambiente se nao existir a variavel de ambiente com esse nome pega o valor padrão*/
+export const BASE_URL = import.meta.env.VITE_BACKEND_URL ?? "http://localhost:8080";

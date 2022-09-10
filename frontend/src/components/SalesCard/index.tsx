@@ -1,4 +1,5 @@
-import { useState } from "react";
+import axios from "axios";
+import { useEffect, useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import NotificationButton from '../NotificationButton';
@@ -14,6 +15,14 @@ function SalesCard() {
   const [minDate, setMinDate] = useState(new Date());
   const [maxDate, setMaxDate] = useState(new Date());
 
+  /* useEffect serve pra executar alguma coisa quando o componente é montado a primeira vez e tambem
+   executar alguma coisa quando algum dado alterar (dentro do useEffect deve conter uma função e uma lista) */
+  useEffect(() => {
+    axios.get("http://localhost:8080/sales")
+      .then(response => {
+        console.log(response.data);
+      });
+  }, []);
 
   return (
     <div className="dsmeta-card">
